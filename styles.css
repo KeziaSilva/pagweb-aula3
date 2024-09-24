@@ -1,10 +1,10 @@
 :root {
-    --branco-principal: ##f2502c;
-    --cinza-secundario: #C0C0C0;
-    --botao-azul: ##c42311;
-    --cor-de-fundo: #00030C;
+    --branco-principal: ##ffb067;
+    --cinza-secundario: #ffb067;
+    --botao-azul: ##ff8337;
+    --cor-de-fundo: #ffb067;
     --fonte-principal: 'Cedarville Cursive';
-    --botao-azul-efeito: #f34739;
+    --botao-azul-efeito: #ff9a4a;
 }
 
 body {

@@ -1,5 +1,5 @@
 :root {
-    --branco-principal: ##FFFAFA;
+    --branco-principal: #FFFAFA;
     --cinza-secundario: #ffb067;
     --botao-azul: #ff8337;
     --cor-de-fundo: #FF8C00;
@@ -16,7 +16,7 @@ body {
 }
 button {
     background-color: #ffb067;
-    color: white;
+    color: #FFFAFA;
     font-family: "Cedarville Cursive", cursive;
     font-weight: 200;
     font-style: normal;

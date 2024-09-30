@@ -3,12 +3,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #FFDAB9; /* Laranja pastel */
     text-align: center;
+    color: white;
 }
 
 h1, h2 {
-    color: #333;
+    font-family: 'Cursive', sans-serif;
+    color: white; /* Cor branca */
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    color: white; /* Cor branca */
 }
 
 button {
@@ -34,7 +41,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ffebcd;
+    background-color: #FFDAB9; /* Laranja pastel */
 }
 
 .intro-content img {
@@ -46,7 +53,7 @@ button:hover {
 /* Página dos Continentes com Animação */
 .globe-section {
     padding: 50px 0;
-    background-color: #e0f7fa;
+    background-color: #FFDAB9; /* Laranja pastel */
 }
 
 .globe {
@@ -75,7 +82,4 @@ button:hover {
 
 /* Página de Receitas */
 .recipe-list button {
-    display: block;
-    margin: 15px auto;
-    width: 200px;
-}
+    display

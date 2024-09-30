@@ -1,164 +1,81 @@
-:root {
-    --branco-principal: #FFFAFA;
-    --cinza-secundario: #ffb067;
-    --botao-azul: #ff8337;
-    --cor-de-fundo: #FF8C00;
-    --fonte-principal: 'Cedarville Cursive';
-    --botao-azul-efeito: #ff9a4a;
-}
-
+/* Estilos Básicos */
 body {
-    background-color: var(--cor-de-fundo);
-    color: var(--branco-principal);
-    font-family: "Cedarville Cursive", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-button {
-    background-color: #ffb067;
-    color: #FFFAFA;
-    font-family: "Cedarville Cursive", cursive;
-    font-weight: 200;
-    font-style: normal;
-}
-
-}
-
-* {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.principal {
-    background-image: url("img/Background.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    align-items: center;
+    background-color: #f9f9f9;
     text-align: center;
 }
 
-.container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
+h1, h2 {
+    color: #333;
 }
 
-.container__botao {
-    background-color: var(--botao-azul);
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
     border-radius: 5px;
-    padding: 1em;
-    color: var(--branco-principal);
-    display: block;
-    text-decoration: none;
-    margin-bottom: 1em;
+    transition: background-color 0.3s ease;
 }
 
-.botao_secundario {
-    background-color: transparent;
-    border: 2px solid var(--branco-principal)
+button:hover {
+    background-color: #45a049;
 }
 
-.container__aviso {
-    font-size: 12px;
-    color: var(--cinza-secundario);
-}
-
-.container__titulo {
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.container__imagem {
-    margin: 1em 0 2em 0;
-}
-
-.container__caixa {
-    margin: 0 6em;
-}
-
-.secundario__imagem {
-    width: 80%;
-}
-
-.secundario {
+/* Página de Introdução */
+.intro-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 0 10em;
+    height: 100vh;
+    background-color: #ffebcd;
 }
 
-.descricao__titulo {
-    font-weight: 700;
-    font-size: 48px;
-    color: var(--branco-principal);
-    margin-bottom: 0.1em;
+.intro-content img {
+    width: 300px;
+    height: auto;
+    margin: 20px;
 }
 
-.descricao__texto {
-    color: var(--cinza-secundario);
+/* Página dos Continentes com Animação */
+.globe-section {
+    padding: 50px 0;
+    background-color: #e0f7fa;
 }
 
-.secundario__botao {
-    display: inline-block;
-    margin-top: 1em;
-}
-
-.container__descricao {
-    padding: 2em;
-}
-
-.dispositivos__lista {
+.globe {
     display: flex;
     justify-content: center;
-    list-style-type: none;
-    margin: 5em 0;
+    gap: 20px;
+    animation: rotateGlobe 10s infinite linear;
 }
 
-.dispositivos {
-    text-align: center;
+.continent {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #2196F3;
+    color: white;
+    border-radius: 10px;
 }
 
-.dispositivos__titulo {
-    font-size: 48px;
-    color: var(--branco-principal);
+@keyframes rotateGlobe {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-.lista__item {
-    font-size: 32px;
-    color: var(--branco-principal);
-}
-
-.rodape {
-    text-align: center;
-    margin: 5em 3em;
-}
-
-.rodape__lista {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin-top: 1em;
-}
-
-.lista__link a {
-    text-decoration: none;
-    color: var(--branco-principal);
-    margin-left: 1em;
-}
-
-.rodape__texto {
-    margin: 1em 0;
-    color: var(--cinza-secundario);
-    font-size: 14px;
-}
-
-.lista__link a:hover {
-    color: var(--botao-azul);
-}
-
-.lista__link a:active {
-    color: purple;
-}
-
-.container__botao:hover {
-    background-color: var(--botao-azul-efeito);
-    color: var(--cor-de-fundo);
+/* Página de Receitas */
+.recipe-list button {
+    display: block;
+    margin: 15px auto;
+    width: 200px;
 }
